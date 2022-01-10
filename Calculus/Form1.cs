@@ -73,6 +73,9 @@ namespace Calculus
                 case "*":
                     result.Text = (value * Double.Parse(result.Text)).ToString();
                     break;
+                case "√":
+                    result.Text = Math.Sqrt(Double.Parse(result.Text)).ToString();
+                    break;
                 default:
                     break;
             }

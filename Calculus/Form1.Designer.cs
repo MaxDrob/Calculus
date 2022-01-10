@@ -48,6 +48,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.equation = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -218,9 +219,9 @@
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button16.Location = new System.Drawing.Point(274, 195);
+            this.button16.Location = new System.Drawing.Point(274, 258);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(45, 108);
+            this.button16.Size = new System.Drawing.Size(44, 45);
             this.button16.TabIndex = 15;
             this.button16.Text = "=";
             this.button16.UseVisualStyleBackColor = true;
@@ -269,11 +270,22 @@
             this.equation.Size = new System.Drawing.Size(0, 18);
             this.equation.TabIndex = 19;
             // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(274, 195);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(45, 45);
+            this.button19.TabIndex = 20;
+            this.button19.Text = "√";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.operator_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 312);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.equation);
             this.Controls.Add(this.result);
             this.Controls.Add(this.button18);
@@ -328,6 +340,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label equation;
+        private System.Windows.Forms.Button button19;
     }
 }
 
